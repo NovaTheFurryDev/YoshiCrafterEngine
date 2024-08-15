@@ -1,55 +1,24 @@
-# ⚠⚠ THIS ENGINE IS OUTDATED ⚠⚠
-## Use [Codename Engine](https://www.github.com/YoshiCrafter29/CodenameEngine) instead.
-
-**This project is over a year old, the code is HORRIBLE and the optimisation is HORRIBLE.**
-
-**I don't wanna be affiliated with this old project of mine anymore. Use Codename instead. It actually have GOOD code, runs WELL (unlike yce), and have GOOD modding support.**
-
-Using YoshiCrafter Engine in its current state would leave you with a lot of problems, including, but not limiting to:
-- **Memory Leaks**: Playing it for too long would simply make the memory goes up more and more. Literally, don't try to fix it.
-- **Bad Source**: It's really bad, don't even start digging into it.
-- **Bad Organisation**: The files aren't sorted out into packages, unlike Codename Engine.
-- **Bad Optimisation**: The engine runs poorly on lower end computers, and is obsolete. Codename highly improves on this point.
-- **Bad modding support**: You can edit one state but not another? Why? Codename also improved on this.
-- **Literally every engine combined**: Literally if you took Psych, Kade and Modding+ and combined them together. There's goods, but also bads. A lot of bads.
-- **No source support**: Wanna mod in source? Go fuck yourself! The engine was never intended to be modded in source, unlike Codename which has source support and multiple defines to customise the engine the way you want for your mod.
-
-### I made Codename to fix all of those issues that prevented modders from actually achieving something good. Use it instead, or use YCE at your own risk.
-
-** **
-
-** **
-
-** **
-
----
-
 # Friday Night Funkin' - YoshiCrafter Engine
-![YoshiCrafter Engine logo](art/banner_new.png)
+![Yoshi Engine's logo](art/banner_new.png)
 
-## Say hi to YoshiCrafter Engine, the new moddable FNF engine.
+This is the repository of Yoshi Engine, a modification of Friday Night Funkin' which allows full modding without source code access.
 
-This is a modification for the game Friday Night Funkin', a game originally made for Ludum Dare 47 "Stuck In a Loop".
+The documentation is [here](documentation/index.md) (in construction), feel free to download it for offline use !
 
-> Uh oh! Your tryin to kiss ur hot girlfriend, but her MEAN and EVIL dad is trying to KILL you! He's an ex-rockstar, the only way to get to his heart? The power of music...
+Thanks to PolybiusProxy for the [MP4 Cutscene Support](https://github.com/brightfyregit/Friday-Night-Funkin-Mp4-Video-Support) !
 
----
-## The engine documentation is [here](https://yoshicrafter29.github.io/YoshiCrafterEngine-Doc/) (in construction).
+Also, if you're going to mod it, do NOT include the executable with it, only your mod in the "mods" folder. The goal of this engine is to have one instance of FNF with every mods in it
 
-## Here's a (non complete) list of YoshiCrafter Engine's functionnalities :
-- **Full mod support (non source)**
-	- Scripting in:
-		* HScript
-		* Lua
+## Here's a full list of Yoshi Engine's functionnalities :
+- **Full mod support**
 	- Songs
 	- Characters
 	- Stages
+	- Modcharts
 	- Custom notes
 	- Cutscenes
 	- Weeks
 	- Credits
-	- Shaders
-	- States (& SubStates)
 - **Customization**
 	- Custom keybinds
 	- Downscroll
@@ -73,62 +42,25 @@ This is a modification for the game Friday Night Funkin', a game originally made
 - Green Screen Mode
 - New charter
 - Freeplay Statistics
-- `.ycemod` file extension (to make mod installation easier)
 - **Developer Mode**
 	- In game logs
-	- Refresh assets
-	- Access to a lot of features, such as the Toolbox.
-- **[And much more...](https://twitter.com/FNFYoshiEngine/status/1520872102680838174?s=20&t=ZHabd-AKO4VSgplsAlAxGA)**
+	- Disables cache
+	- Character debug mode
 
-## Developers & Helpers
-- **[YoshiCrafter29](https://www.twitter.com/YoshiCrafter29)** - Main Developer
-- **[siivkoi](https://www.twitter.com/sillysil220)** - Animator (+ helped on some stuff)
-- **[CaptainKirby](https://www.twitter.com/cap_kirby)** - YouTube tutorials for the engine
-- **[KiyuuuSama](https://www.twitter.com/KiyuuuSama)** - Made the logo & some of the credits icons
+## People who helped me
+- **AbnormalPoof** for the pretty printing of chart jsons.
 
-## Original Game Developers
-- **[ninjamuffin99](https://twitter.com/ninja_muffin99)** - Programmer
-- **[PhantomArcade3K](https://twitter.com/phantomarcade3k)** and [Evilsk8r](https://twitter.com/evilsk8r) - Art
-- **[Kawaisprite](https://twitter.com/kawaisprite)** - Musician
-
-## Special Thanks
-- **[PolybiusProxy](https://www.twitter.com/polybiusproxy)** - MP4 Cutscene Support
-- **[Smokey_5_](https://www.twitter.com/Smokey_5_)** - Adobe Animate Atlas support
-- And all of the contributors.
+## How to install a mod
+1. Download an Yoshi Engine mod
+2. Get the mod folder (in the root or in a "mods" folder, or see instructions)
+3. Copy over to the "mods" folder
+4. Restart the engine
+5. Enjoy !
 
 ---
-# Mod Installation
-## How to install a mod (`.ycemod` format)
-### If you have YoshiCrafter Engine
-1. Double-click the downloaded .ycemod file (open it)
-2. Press Enter on the installation screen
-3. Enjoy!
-### If don't have YoshiCrafter Engine
-1. Install and launch the engine
-2. Go to the Mods menu
-3. Drag & Drop the `.ycemod` file on the game.
-4. Press enter on the installation screen
-5. Enjoy!
+# Friday Night Funkin
 
-## How to install a mod (`.zip` or `.rar`)
-1. Open the `mods` folder.
-2. Extract the mod here.
-3. Enjoy! (No restart needed)
-
----
-# How to build the engine
-
-> ⚠ **This engine was specifically made for soft coding (mods folder), and so, modding via source is NOT recommended. We'll not provide any help for any issue you encounter while modding from source.**
-
-To build from source, it's pretty simple:
-- Install [Haxe](https://haxe.org/download/) (make sure to use the latest version!!)
-- Install [HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/)
-- Run `config.bat` to get every requirement installed
-- Execute `lime test windows` or `lime build windows` to build the engine.
---- 
-# Friday Night Funkin'
-
-This is the repository for Friday Night Funkin, 
+This is the repository for Friday Night Funkin, a game originally made for Ludum Dare 47 "Stuck In a Loop".
 
 Play the Ludum Dare prototype here: https://ninja-muffin24.itch.io/friday-night-funkin
 Play the Newgrounds one here: https://www.newgrounds.com/portal/view/770371
@@ -136,4 +68,84 @@ Support the project on the itch.io page: https://ninja-muffin24.itch.io/funkin
 
 IF YOU MAKE A MOD AND DISTRIBUTE A MODIFIED / RECOMPILED VERSION, YOU MUST OPEN SOURCE YOUR MOD AS WELL
 
+## Credits / shoutouts
+
+- [ninjamuffin99 (me!)](https://twitter.com/ninja_muffin99) - Programmer
+- [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
+- [Kawaisprite](https://twitter.com/kawaisprite) - Musician
+
 This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
+
+## Build instructions
+
+THESE INSTRUCTIONS ARE FOR COMPILING THE GAME'S SOURCE CODE!!!
+
+IF YOU WANT TO JUST DOWNLOAD AND INSTALL AND PLAY THE GAME NORMALLY, GO TO ITCH.IO TO DOWNLOAD THE GAME FOR PC, MAC, AND LINUX!!
+
+https://ninja-muffin24.itch.io/funkin
+
+IF YOU WANT TO COMPILE THE GAME YOURSELF, CONTINUE READING!!!
+
+### Installing the Required Programs
+
+First, you need to install Haxe and HaxeFlixel. I'm too lazy to write and keep updated with that setup (which is pretty simple). 
+1. [Install Haxe 4.1.5](https://haxe.org/download/version/4.1.5/) (Download 4.1.5 instead of 4.2.0 because 4.2.0 is broken and is not working with gits properly...)
+2. [Install HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/) after downloading Haxe
+
+Other installations you'd need are the additional libraries, a fully updated list will be in `Project.xml` in the project root. Currently, these are all of the things you need to install:
+```
+flixel
+flixel-addons
+flixel-ui
+hscript
+newgrounds
+```
+So for each of those type `haxelib install [library]` so shit like `haxelib install newgrounds`
+
+You'll also need to install a couple things that involve Gits. To do this, you need to do a few things first.
+1. Download [git-scm](https://git-scm.com/downloads). Works for Windows, Mac, and Linux, just select your build.
+2. Follow instructions to install the application properly.
+4. Run `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc` to install Discord RPC.
+5. Run `haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit` to install hxvm-luajit.
+6. Run `haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit` to install linc_luajit.
+6. Run `haxelib git flixel-textureatlas-yoshiengine https://github.com/YoshiCrafter29/Flixel-TextureAtlas-YoshiCrafterEngine` to install texture atlas support.
+
+You should have everything ready for compiling the game! Follow the guide below to continue!
+
+At the moment, you can optionally fix the transition bug in songs with zoomed-out cameras.
+- Run `haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons` in the terminal/command-prompt.
+
+### Ignored files
+
+I gitignore the API keys for the game so that no one can nab them and post fake high scores on the leaderboards. But because of that the game
+doesn't compile without it.
+
+Just make a file in `/source` and call it `APIStuff.hx`, and copy & paste this into it
+
+```haxe
+package;
+
+class APIStuff
+{
+	public static var API:String = "";
+	public static var EncKey:String = "";
+}
+
+```
+
+and you should be good to go there.
+
+### Compiling game
+NOTE: If you see any messages relating to deprecated packages, ignore them. They're just warnings that don't affect compiling
+
+Once you have all those installed, it's pretty easy to compile the game. You just need to run `lime test html5 -debug` in the root of the project to build and run the HTML5 version. (command prompt navigation guide can be found here: [https://ninjamuffin99.newgrounds.com/news/post/1090480](https://ninjamuffin99.newgrounds.com/news/post/1090480))
+To run it from your desktop (Windows, Mac, Linux) it can be a bit more involved. For Linux, you only need to open a terminal in the project directory and run `lime test linux -debug` and then run the executable file in export/release/linux/bin. For Windows, you need to install Visual Studio Community 2019. While installing VSC, don't click on any of the options to install workloads. Instead, go to the individual components tab and choose the following:
+* MSVC v142 - VS 2019 C++ x64/x86 build tools
+* Windows SDK (10.0.17763.0)
+
+Once that is done you can open up a command line in the project's directory and run `lime test windows -debug`. Once that command finishes (it takes forever even on a higher end PC), you can run FNF from the .exe file under export\release\windows\bin
+As for Mac, 'lime test mac -debug' should work, if not the internet surely has a guide on how to compile Haxe stuff for Mac.
+
+### Additional guides
+
+- [Command line basics](https://ninjamuffin99.newgrounds.com/news/post/1090480)
