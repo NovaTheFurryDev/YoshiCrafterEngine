@@ -39,6 +39,8 @@ abstract FileExplorerIcon(Int) {
     var Lua = 10;
     var DLL = 11;
     var MP4 = 12;
+		var ASM = 13;
+		var LUM = 14;
 }
 
 
@@ -202,7 +204,11 @@ class FileExplorer extends MusicBeatSubstate {
                 "frag;vert";
             case HScript:
                 "hx;hscript;hsc";
-            case Script:
+						case asmScript:
+								"asmScript";
+						case LuminScript:
+								"lum";
+						case Script:
                 "hx;hscript;hsc;lua";
             case Lua:
                 "lua";
