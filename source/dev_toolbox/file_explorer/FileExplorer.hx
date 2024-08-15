@@ -103,6 +103,8 @@ class FileExplorer extends MusicBeatSubstate {
                 case "png":                     Bitmap;
                 case "exe":                     Executable;
                 case "lua":                     Lua;
+                case "asmScript":                     asmScript;
+                case "lum":                     Lumin;
                 case "dll":                     DLL;
                 case "mp4":                     MP4;
                 default:                        Unknown;
@@ -175,6 +177,8 @@ class FileExplorer extends MusicBeatSubstate {
                 ".hx or .hscript script";
             case Lua:
                 ".lua script";
+            case asmScript:
+                ".asm script";
             case Script:
                 "script";
             case Shader:
