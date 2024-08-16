@@ -20,7 +20,7 @@ enum FileExplorerType {
     HScript;
     Lua;
     OGG;
-	Script;
+    Script;
     Shader;
 }
 
@@ -39,8 +39,8 @@ abstract FileExplorerIcon(Int) {
     var Lua = 10;
     var DLL = 11;
     var MP4 = 12;
-		var ASM = 13;
-		var LUM = 14;
+    var ASM = 13;
+    var LUM = 14;
 }
 
 
@@ -105,7 +105,7 @@ class FileExplorer extends MusicBeatSubstate {
                 case "png":                     Bitmap;
                 case "exe":                     Executable;
                 case "lua":                     Lua;
-                case "asmScript":                     asmScript;
+                case "asmScript":               asmScript;
                 case "lum":                     Lumin;
                 case "dll":                     DLL;
                 case "mp4":                     MP4;
@@ -181,6 +181,8 @@ class FileExplorer extends MusicBeatSubstate {
                 ".lua script";
             case asmScript:
                 ".asm script";
+	    case Lumin:
+                ".lum script";
             case Script:
                 "script";
             case Shader:
@@ -204,12 +206,12 @@ class FileExplorer extends MusicBeatSubstate {
                 "frag;vert";
             case HScript:
                 "hx;hscript;hsc";
-						case asmScript:
-								"asmScript";
-						case LuminScript:
-								"lum";
-						case Script:
-                "hx;hscript;hsc;lua";
+            case asmScript:
+		"asmScript";
+            case LuminScript:
+		"lum";
+            case Script:
+                "hx;hscript;hsc;lua;asmScript;lum";
             case Lua:
                 "lua";
             case OGG:
