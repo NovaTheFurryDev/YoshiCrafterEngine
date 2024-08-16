@@ -72,6 +72,7 @@ class Script implements IFlxDestroyable {
         }
         var script = switch(ext.toLowerCase()) {
             case 'hhx':                     new HardcodedHScript();
+            case 'asmScript':                     new ASMScript();
             case 'hx' | 'hscript' | 'hsc':  new HScript();
             #if ENABLE_LUA case 'lua':      new LuaScript(); #end
             default:                        null;
@@ -1175,4 +1176,10 @@ interface ILuaScriptable {
     public function setSharedLuaVariables(script:LuaScript):Void;
     public function addLuaCallbacks(script:LuaScript):Void;
     #end
+}
+class ASMScript extends Script {
+
+function new() {
+trace("fuck");
+}
 }
