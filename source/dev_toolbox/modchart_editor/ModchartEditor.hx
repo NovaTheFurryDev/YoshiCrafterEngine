@@ -1,5 +1,7 @@
-package;
+package dev_toolbox.modchart_editor;
 
-function create(){
-// Modchart editor
+class ModchartEditor extends MusicBeatState {
+      override public function create(){
+      // Modchart editor
+      }
 }
